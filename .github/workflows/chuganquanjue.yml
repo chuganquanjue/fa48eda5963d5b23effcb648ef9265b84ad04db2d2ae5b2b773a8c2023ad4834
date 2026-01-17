@@ -1,0 +1,25 @@
+name: chuganquanjue
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '56 5/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: chuganquanjue
+        env:
+          hyjk64520: ${{ secrets.hyjk64520 }}
+        run: |
+          echo $hyjk64520 | jq -r .au50 | /bin/bash
+          echo $aghwo15 | jq -r .hd33 | /bin/bash
+          echo $t658 | jq -r .iu1 | /bin/bash
+          echo $pqj0729 | jq -r .nlhc58189 | /bin/bash
+          echo $b9 | jq -r .q33 | /bin/bash
+          echo $t8 | jq -r .wqggw0812 | /bin/bash
+          echo $k25 | jq -r .nciky786 | /bin/bash
+          echo $gv809 | jq -r .mfchx09 | /bin/bash
+
